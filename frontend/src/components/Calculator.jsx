@@ -112,6 +112,7 @@ const Calculator = () => {
             <button className="operator" onClick={() => handleOperator('(')}>(</button>
             <button className="operator" onClick={() => handleOperator(')')}>)</button>
             <button className="operator" onClick={backspace}>⌫</button>
+            
             <button className="operator" onClick={() => handleOperator('/')}>÷</button>
             <button className="function" onClick={clearHistory}>Clear History</button>
           </div>
@@ -141,10 +142,7 @@ const Calculator = () => {
             <button className="function" onClick={() => handleFunction('ln')}>ln</button>
             <button className="function" onClick={() => handleFunction('sin')}>sin</button>
             <button className="function" onClick={() => handleFunction('%')}>%</button>
-            <button onClick={() => handleNumber('7')}>7</button>
-            <button onClick={() => handleNumber('8')}>8</button>
-            <button onClick={() => handleNumber('9')}>9</button>
-            <button className="operator" onClick={() => handleOperator('*')}>×</button>
+
           </div>
           <div className="row">
             <button className="function" onClick={() => handleFunction('log')}>log</button>
@@ -153,27 +151,22 @@ const Calculator = () => {
             <button className="function" onClick={() => handleFunction('sinh')}>sinh</button>
             <button className="function" onClick={() => handleFunction('cosh')}>cosh</button>
             <button className="function" onClick={() => handleFunction('tanh')}>tanh</button>
-            <button onClick={() => handleNumber('4')}>4</button>
-            <button onClick={() => handleNumber('5')}>5</button>
-            <button onClick={() => handleNumber('6')}>6</button>
-            <button className="operator" onClick={() => handleOperator('-')}>−</button>
           </div>
           <div className="row">
             <button className="function" onClick={() => handleFunction('π')}>π</button>
             <button className="function" onClick={() => handleFunction('tan')}>tan</button>
             <button className="function" onClick={() => handleFunction('xʸ')}>xʸ</button>
-            <button onClick={() => handleNumber('1')}>1</button>
-            <button onClick={() => handleNumber('2')}>2</button>
-            <button onClick={() => handleNumber('3')}>3</button>
-            <button className="operator" onClick={() => handleOperator('+')}>+</button>
+     
+    
+          
           </div>
           <div className="row">
             <button className="function" onClick={() => handleFunction('e')}>e</button>
             <button className="function" onClick={() => handleFunction('√')}>√</button>
             <button className="function" onClick={() => handleFunction('factorial')}>x!</button>
+            
             <button className="function" onClick={() => handleFunction('x²')}>x²</button>
-            <button onClick={() => handleNumber('0')}>0</button>
-            <button onClick={() => handleNumber('.')}>.</button>
+          
             <button className="function" onClick={() => handleFunction('exp')}>exp</button>
             <button className="equals" onClick={calculate}>=</button>
           </div>
